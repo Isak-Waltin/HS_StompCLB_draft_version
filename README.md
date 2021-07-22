@@ -7,4 +7,5 @@ Current version number: 3.1
 ## Credits:
 
 Inspiration from artworks by [Ilias Sounas](https://www.sounasdesign.com)
+
 Raycaster engine based on Wolfenstein 3D
