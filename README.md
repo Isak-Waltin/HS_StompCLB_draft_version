@@ -1,7 +1,7 @@
 # HS_StompCLB_draft_version
 For keeping track of the current title of the draft, so we don't accidentally overwrite each others' changes.
 
-Current version number: 3.2.2
+Current version number: 3.3
 
 
 ## Credits:
