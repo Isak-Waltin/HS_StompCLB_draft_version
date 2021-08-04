@@ -20,7 +20,8 @@ As of writing, there are no tile textures. These will have to be created, and th
 Most of the data and images used in the project can be found in the main scene "Raycaster Engine", in the object "Setup" (looks like a wrench), inside the custom rule "Other Data".
 
 Data that can be modified and added there (non exhaustive):
-* 2D map tile textures ("Set Tile Image")
+* 2D map tile textures ("Set Tile Image"). The variable "mem_W1" controls the apparent size of that sprite.
+* Dialogues ("Set Dialogue"). Add a new if block and write the dialogue ID as the conditional. "RC_general_data" sets the text in the dialogue, "DialogueCharacterID" will set what character is saying the dialogue (not implemented yet). Optionally, a "Dialogue_NextDialogueID" can be set, if the dialogue should cover more than one "page".
 
 ## Command Interpreter
 
@@ -28,5 +29,11 @@ There is a simple command interpreter/terminal in the project. It is in the uppe
 
 Tapping it and entering a command will run that command.
 
-Some useful commands are:
-
+Some useful commands:
+| Command | Argument 1 | Argument 2 | Information |
+|---|---|---|---|
+|roomtp| room index (a number)|| Teleports the player to a room in the raycaster engine|
+|dialogue| dialogue index (can be anything, as long as a dialogue exists for that ID)|| Displays a dialogue.|
+| set| variable (state, colors, time, door, or mapsize)| value| Sets a variable in the project to a given value|
+|run | Message|| Uses the Broadcast Message block to broadcast a Message|
+|||||
